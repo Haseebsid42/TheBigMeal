@@ -1,9 +1,12 @@
 {
-  "dependencies": {
-    "@angular-devkit/build-angular": "^16.0.0",
-    "@angular/cli": "^16.0.0",
-    "@angular/forms": "^16.0.0",
-    "@angular/router": "^16.0.0",
-    "module": "^1.2.5"
+  "name": "foodmine-course",
+  "version": "1.0.0",
+  "engines": {
+      "node": ">=18 <19"
+  },
+  "scripts": {
+      "start": "cd backend/src && npm start",
+      "prebuild": "cd backend && npm run build",
+      "build": "cd frontend && npm run build"
   }
 }

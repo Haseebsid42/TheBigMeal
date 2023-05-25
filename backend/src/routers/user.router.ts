@@ -49,10 +49,10 @@ router.post('/register', asyncHandler(
 
     const newUser:User = {
       id:'',
-      name,
+      name:name,
       email: email.toLowerCase(),
       password: encryptedPassword,
-      address,
+      address:address,
       isAdmin: false
     }
 
@@ -74,7 +74,7 @@ router.post('/register', asyncHandler(
       name: user.name,
       address: user.address,
       isAdmin: user.isAdmin,
-      token: token
+      token: token 
     };
   }
   
