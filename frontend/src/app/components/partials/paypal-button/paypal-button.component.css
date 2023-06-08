@@ -1,0 +1,12 @@
+.payment-btn{
+  display: inline-block;
+  width: -webkit-fill-available;
+  padding: 0.8em;
+  font-size: larger;
+  border-radius: 4px;
+  background: #009cde;
+  border: none;
+  color: white;
+  font-weight: bolder;
+  box-shadow: 0 0 8px 4px;
+}

@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { LOCALE_ID } from '@angular/core';
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/partials/header/header.component';
@@ -53,7 +54,7 @@ import { AppRoutingModule } from './app-routing.module';
     MapComponent,
     PaymentPageComponent,
     PaypalButtonComponent,
-    OrderTrackPageComponent
+    OrderTrackPageComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -70,7 +71,8 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   providers: [
     {provide:HTTP_INTERCEPTORS, useClass:AuthInterceptor, multi: true },
-    {provide:HTTP_INTERCEPTORS, useClass:LoadingInterceptor, multi: true }
+    {provide:HTTP_INTERCEPTORS, useClass:LoadingInterceptor, multi: true },
+    { provide: LOCALE_ID, useValue: 'en-IN' }
   ],
   bootstrap: [AppComponent]
 })

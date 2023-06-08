@@ -2,6 +2,7 @@ import { Component, ElementRef, Input, OnChanges, ViewChild } from '@angular/cor
 import { icon, LatLng, LatLngExpression, LatLngTuple, LeafletMouseEvent, map, Map, marker, Marker, tileLayer } from 'leaflet';
 import { LocationService } from 'src/app/services/location.service';
 import { Order } from 'src/app/shared/models/Order';
+import * as L from 'leaflet';
 
 @Component({
   selector: 'map',
