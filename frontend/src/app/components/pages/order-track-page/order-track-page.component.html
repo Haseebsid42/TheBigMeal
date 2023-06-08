@@ -1,6 +1,6 @@
 <div class="container">
   <div class="content" *ngIf="order">
-    <h1>Order #{{order.id}}</h1>
+    <h1 style="  overflow-x: scroll;">Order #{{order.id}}</h1>
     <div class="details">
       <div><strong>Date</strong> {{order.createdAt | date:'medium'}}</div>
       <div><strong>Name</strong> {{order.name}}</div>
